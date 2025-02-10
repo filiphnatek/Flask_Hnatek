@@ -1,25 +1,89 @@
-/* General Styles */
-body {
+/* Reset základních stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
+}
+
+body {
     background-color: #f4f4f4;
     color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
     text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
     margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
     padding: 0;
 }
 
-/* Header Styles */
-h1 {
-    color: #007bff;
-    font-size: 2.5em;
-    margin-top: 20px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Paragraph Styles */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
 p {
-    font-size: 1.2em;
-    color: #555;
-    margin: 10px auto;
-    width: 80%;
-    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+/* Odkazy */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivita */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
