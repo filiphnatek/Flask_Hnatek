@@ -7,25 +7,25 @@ def index():  # Metoda pro routing indexu #
     return render_template('index.html')
 
 @app.route('/abc')
-def abc(): # Metoda pro routing indexu #
+def abc(): # Metoda pro routing abc #
     return render_template('abc.html')
 
 @app.route('/heb')
-def heb(): # Metoda pro routing indexu #
+def heb(): # Metoda pro routing heb #
     return render_template('heb.html')
 
 
 @app.route('/azb')
-def azb(): # Metoda pro routing indexu #
+def azb(): # Metoda pro routing azb #
     return render_template('azb.html')
 
 
 @app.route('/base')
-def base(): # Metoda pro routing indexu #
+def base(): # Metoda pro routing base #
     return render_template('base.html')
 
 @app.route('/alfa')
-def alfa(): # Metoda pro routing indexu #
+def alfa(): # Metoda pro routing alfa #
     return render_template('alfa.html')
 
 
