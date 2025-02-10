@@ -6,10 +6,32 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/abc')
+def abc():
+    return render_template('abc.html')
+
+@app.route('/heb')
+def heb():
+    return render_template('heb.html')
+
+
+@app.route('/azb')
+def azb():
+    return render_template('azb.html')
+
+
+@app.route('/base')
+def base():
+    return render_template('base.html')
+
+@app.route('/alfa')
+def alfa():
+    return render_template('alfa.html')
+
+
 @app.route("/<jmeno>")
 def hello(jmeno):
     return f"<h1>Hello, {jmeno}!</h1>"
-
 
 def nasobeni(a, b):
     return a * b
