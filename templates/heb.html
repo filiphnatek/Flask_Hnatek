@@ -1,27 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Hebrejština{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Různé abecedy!</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('index') }}">Hlavní strana</a></li>
-                <li><a href="{{ url_for('abc') }}">Abeceda</a></li>
-                <li><a href="{{ url_for('alfa') }}">Alfabeta</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends 'base.html' %}
 
+{% block content %}
     <main>
         <h1>Hebrejština</h1>
         <p>Hebrejština (עִבְרִית‎, ivrit) označuje souhrnně všechny vývojové varianty hebrejského jazyka od starověké hebrejštiny přes biblickou (עברית תנ״כית‎ ivrit tanachit, též לשון הקודש‎, lešon hakodeš, „svatý jazyk“) až po moderní hebrejštinu (עברית‎, ivrit), kterou se dnes hovoří ve státě Izrael.</p>
         <p>Hebrejština patří do rodiny semitských jazyků, resp. ke kanaánské severozápadní skupině. Nejstarší dochované hebrejské texty pocházejí z 10. století př. n. l. (tzv. gezerský kalendář). V případě starších textů není možno hovořit o plné diferenciaci severozápadních semitských jazyků mezi jednotlivé jazyky či větve, hovoří se tedy spíše o společné protosemitštině nebo protokeneanštině.</p>
     </main>
-</body>
-</html>
+{% endblock %}

@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Kontakt{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Různé abecedy!</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('index') }}">Hlavní strana</a></li>
-                <li><a href="{{ url_for('abc') }}">Abeceda</a></li>
-                <li><a href="{{ url_for('alfa') }}">Alfabeta</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends 'base.html' %}
 
+{% block content %}
     <main>
         <h1>Abeceda</h1>
         <p>a, b, c, č, d, e, f, g, h, ch, i, j, k, l, m, n, o, p, q, r, ř, s, š, t, u, v, w, x, y, z, ž</p>
     </main>
-</body>
-</html>
+{% endblock %}
+
+

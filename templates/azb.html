@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}Azbuka{% endblock %}</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <header>
-        <h1>Různé abecedy!</h1>
-        <nav>
-            <ul>
-                <li><a href="{{ url_for('index') }}">Hlavní strana</a></li>
-                <li><a href="{{ url_for('abc') }}">Abeceda</a></li>
-                <li><a href="{{ url_for('alfa') }}">Alfabeta</a></li>
-            </ul>
-        </nav>
-    </header>
+{% extends 'base.html' %}
 
+{% block content %}
     <main>
         <h1>Azbuka</h1>
 <p>Azbuka může označovat následující písma vycházející z hlaholice – podle prvních písmen  (az) a  (buki):</p>
     </main>
-</body>
-</html>
+{% endblock %}
