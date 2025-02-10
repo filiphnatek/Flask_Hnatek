@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Alfabeta{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Různé abecedy!</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Hlavní strana</a></li>
+                <li><a href="{{ url_for('abc') }}">Abeceda</a></li>
+                <li><a href="{{ url_for('alfa') }}">Alfabeta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Alfabeta</h1>
+        <p>A, α alfa N, ν ný
+B, β béta Ξ, ξ ksí
+Γ, γ gamma O, o omikron
+∆, δ delta Π, π, ̟ pí
+E, ε, ǫ epsílon P, ρ, ̺ ró
+Z, ζ (d)zéta Σ, σ, ς sígma
+H, η éta T, τ tau
+Θ, θ, ϑ théta Υ, υ ypsilon
+I, ι ióta Φ, ϕ, φ fí
+K, κ, κ kappa X, χ chí
+Λ, λ lambda Ψ, ψ psí
+M, µ mý Ω, ω ómega</p>
+    </main>
+</body>
+</html>
