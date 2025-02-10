@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9236f60d-112c-4319-8206-a354fa78bb0f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="9236f60d-112c-4319-8206-a354fa78bb0f" name="Changes" comment="prvni commit">
+      <change afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +29,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.index.html.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -59,8 +58,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739174719907</updated>
-      <workItem from="1739174720574" duration="767000" />
+      <workItem from="1739174720574" duration="3113000" />
     </task>
+    <task id="LOCAL-00001" summary="prvni commit">
+      <option name="closed" value="true" />
+      <created>1739175742022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739175742022</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,7 +85,11 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="prvni commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="prvni commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1739175489642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/PythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1739177513527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
