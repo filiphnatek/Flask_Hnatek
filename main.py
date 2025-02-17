@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -28,6 +28,11 @@ def base(): # Metoda pro routing base #
 def alfa(): # Metoda pro routing alfa #
     return render_template('alfa.html')
 
+# @app.route('/link')
+#def link(): # Metoda pro routing alfa #
+#    return render_template('link.html')
+
+
 
 @app.route("/<jmeno>")
 def hello(jmeno):
@@ -42,6 +47,17 @@ def nasobeni_route(a, b):
         return f"{int(a) * int(b)} toto je vysledek"
     except ValueError:
         return "nejsou cisla"
+
+@app.route ("/odkaz", methods= ["GET", "POST"])
+def odkaz():
+    if request.method == "POST":
+        blog = request.form["blog"]
+        email = request.form["email"]
+        radio = request.form["radio"]
+        return render_template("zkouska.html", blog=blog, email=email, radio=radio)
+    return render_template("link.html")
+
+
 
 if __name__== "__main__":
     app.run(debug=True)
