@@ -3,15 +3,25 @@
 {% block content %}
 
 <h1>
-    {& block title &}
+    {% block title %}
     zkouska
-    {& endblock title &}
+    {% endblock title %}
 </h1>
 
 <main>
-    <p>Název bloku je blog {{ blog }}</p>
-    <p>Adresa je {{ email }}</p>
-    <p>Programovací jazyk je {{ radio }}</p>
+    {% if radio %}
+    <p>Vybrany programovaci jazyk je {{ radio }}</p>
 
+    {% if username == "pokuston" and password == "heslo" %}
+    <h3>Úspěšné přihlášení uživatele {{ username }}</h3>
+    {% elif username == "pokuston" %}
+    <h3>Špatné heslo pro {{ username }}</h3>
+    {% else %}
+    <h3>Neplatný uživatel</h3>
+    {% endif %}
+
+    <p>Programovací jazyk je {{ radio }}</p>
+    {% endif %}
 </main>
+
 {% endblock %}

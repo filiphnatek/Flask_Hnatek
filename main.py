@@ -51,10 +51,10 @@ def nasobeni_route(a, b):
 @app.route ("/odkaz", methods= ["GET", "POST"])
 def odkaz():
     if request.method == "POST":
-        blog = request.form["blog"]
-        email = request.form["email"]
+        username = request.form["username"]
+        password = request.form["password"]
         radio = request.form["radio"]
-        return render_template("zkouska.html", blog=blog, email=email, radio=radio)
+        return render_template("zkouska.html", username=username, password=password, radio=radio)
     return render_template("link.html")
 
 
